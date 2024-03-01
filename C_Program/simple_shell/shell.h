@@ -3,7 +3,9 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 void prompt(void);
+void token_generator(char user_char);
 
 #endif
