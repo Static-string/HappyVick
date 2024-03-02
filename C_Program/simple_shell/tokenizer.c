@@ -1,19 +1,18 @@
 #include "shell.h"
 
-char token_generator(char *user_char)
-{
-	const char *delim = " ";
-	char *token;
+void token_generator(char *user_char) {
+    if (user_char == NULL) {
+        printf("Error: Input string is NULL\n");
+        return; // Exit function if input string is NULL
+    }
 
-	token = strtok(user_char, delim);
-	printf("%s\n", token);
+    const char *delim = " \n";
+    char *token;
 
-	while((token = strtok(NULL, delim)) )
-	{
+    token = strtok(user_char, delim);
+    printf("%s\n", token);
 
-		printf("%s\n",token);
-
-	}
-
-	return (*user_char);
-}	
+    while ((token = strtok(NULL, delim)) != NULL) {
+        printf("%s\n", token);
+    }
+}

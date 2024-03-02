@@ -4,8 +4,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
 
 void prompt(void);
-char token_generator(char *user_char);
+void token_generator(char *user_char);
 
 #endif
