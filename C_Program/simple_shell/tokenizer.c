@@ -6,15 +6,14 @@ char token_generator(char *user_char)
 	char *token;
 
 	token = strtok(user_char, delim);
-	printf("%s", token);
+	printf("%s\n", token);
 
-	token = strtok(NULL, delim);
-	printf("%s",token);
-
-/*	while((token = strtok(NULL, delim)) != NULL)
+	while((token = strtok(NULL, delim)) )
 	{
-	printf("%s",token);
-	}*/
 
-	return (*token);
+		printf("%s\n",token);
+
+	}
+
+	return (*user_char);
 }	
