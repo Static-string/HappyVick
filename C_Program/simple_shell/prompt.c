@@ -11,7 +11,7 @@ void prompt(void)
 	printf("Static_String$:");
 
 	user_input = getline(&user_char, &n, stdin);
-	printf("%s", user_char);
+//	printf("%s", user_char);
 	
 	if (user_input == -1)
 		perror("reached end of line");

@@ -6,6 +6,6 @@
 #include <string.h>
 
 void prompt(void);
-void token_generator(char user_char);
+char token_generator(char *user_char);
 
 #endif
