@@ -1,5 +1,20 @@
-#include "shell.h"
+#include <stdio.h>
+#include <unistd.h>
 
-void execute_user_input()
+/**
+ * main - execve example
+ *
+ * Return: Always 0.
+ */
+int main(void)
 {
+    char *argv[] = {"/bin/pwd", "/usr/", NULL};
 
+    printf("Before execve\n");
+    if (execve(argv[0], argv, NULL) == -1)
+    {
+        perror("Error:");
+    }
+    printf("After execve\n");
+    return (0);
+}
