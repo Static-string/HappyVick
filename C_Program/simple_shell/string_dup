@@ -1,0 +1,23 @@
+#include "shell.h"
+
+char **string_dup(int i, char *user_input, dup_user_input[])
+{
+
+	dup_user_input[i] = user_input;
+
+	/* printf("This is printed from string_dup: %s\n", dup_user_input[i]); */
+	return (&dup_user_input);
+
+}
+
+/* void *string_concat(char *dup_user_input)
+{
+        char Confirst_command[20];
+        char program_pth[10] = "/bin/";
+
+        strcpy(Confirst_command,program_pth);
+        strcat(Confirst_command,dup_user_input[0]);
+
+        strcpy(dup_user_input[0],Confirst_command);
+	printf("This is printed from string_dup: %s\n", dup_user_input[0]);
+}*/

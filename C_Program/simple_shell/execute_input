@@ -1,0 +1,9 @@
+#include "shell.h
+
+void execute_input(char *user_input[])
+{
+	if (execve(user_input[0], user_input, NULL) == -1)
+   	{
+        	perror("Error:");
+   	}
+}
